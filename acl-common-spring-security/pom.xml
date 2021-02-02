@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.lhf</groupId>
+        <artifactId>acl-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../acl-parent</relativePath>
+    </parent>
+
+    <artifactId>acl-common-spring-security</artifactId>
+    <description>SpringSecurity相关配置</description>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.lhf</groupId>
+            <artifactId>acl-common-service-base</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- Spring Security依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+        </dependency>
+    </dependencies>
+</project>
